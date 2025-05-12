@@ -69,20 +69,35 @@
 // }
 
 //                                         (day4 /5. Move all negative numbers to beginning and positive to end)
-public class DSA{
-    public static void main(String[] args) {
-        int[] arr ={2,-4,5,-6,7,-9};
-        int j=0;
-        int i;
-        for(i=0; i<5; i++){
-            if ( arr[i]<0){
-                int temp= arr[i];
-                arr[i]= arr[j];
-                arr[j]= temp;
-                j++;
-                
+ public class DSA {
+    public static void rearrange(int[] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+  while (left < right) {
+             while (left < right && arr[left] < 0) {
+                left++;
+            }
+  while (right > left && arr[right] > 0) {
+                right--;
+            }
+if (left < right) {
+                int temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
             }
         }
-        System.out.println(arr[j] );
+    }
+
+
+    
+    public static void main(String[] args) {
+        int[] arr = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+        rearrange(arr);
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
     }
 }
