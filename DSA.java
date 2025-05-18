@@ -69,35 +69,48 @@
 // }
 
 //                                         (day4 /5. Move all negative numbers to beginning and positive to end)
- public class DSA {
-    public static void rearrange(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-  while (left < right) {
-             while (left < right && arr[left] < 0) {
-                left++;
-            }
-  while (right > left && arr[right] > 0) {
-                right--;
-            }
-if (left < right) {
-                int temp = arr[left];
-                arr[left] = arr[right];
-                arr[right] = temp;
-                left++;
-                right--;
-            }
-        }
-    }
-
-
+//  class RearrangeArray {
+//     public static void rearrange(int[] arr) {
+//         int left = 0;
+//         int right = arr.length - 1;
+//   while (left < right) {
+//              while (left < right && arr[left] < 0) {
+//                 left++;
+//             }
+//   while (right > left && arr[right] > 0) {
+//                 right--;
+//             }
+// if (left < right) {
+//                 int temp = arr[left];
+//                 arr[left] = arr[right];
+//                 arr[right] = temp;
+//                 left++;
+//                 right--;
+//             }
+//         }
+//     }
     
-    public static void main(String[] args) {
-        int[] arr = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
-        rearrange(arr);
 
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
+// public class DSA{
+//     public static void main(String[] args) {
+//         int[] arr = {-12, 11, -13, -5, 6, -7, 5, -3, -6};
+//         rearrange(arr);
+
+//         for (int num : arr) {
+//             System.out.print(num + " ");
+//         }
+//     }
+// }
+//  }
+//                                                 (day 5 /6. Find Union and Intersection of two arrays)
+public class DSA{
+    public static void main(String[] args) {
+        int[] arr1 =  {1,3,4,5};
+        int[] arr2 = {9,8,7,6};
+  for(int i=0; i<4; i++){
+    int[] arr =  arr1 +  arr2;
+  }
+  System.out.println("arr");
     }
+
 }
