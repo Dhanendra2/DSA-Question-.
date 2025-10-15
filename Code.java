@@ -17,10 +17,65 @@ public class Code{
 
 
 
+// Scanner sc= new Scanner(System.in);
+// int a= sc.nextInt();
+// int b= sc.nextInt();
+// int sum = a+b;
+// System.out.println(sum );
+//     }
+// }
+
+//                                conditional statement 
+// Scanner sc= new Scanner(System.in);
+// int age= sc.nextInt();
+// if( age>18){
+//     System.out.println("adult");
+// }
+// else{
+//     System.out.println("not adult");
+// }
+//     }
+// }
+
+//                           odd or even number
+// Scanner sc= new Scanner(System.in);
+// int num= sc.nextInt();
+// if( num%2==0){
+//     System.out.println("even");
+// }
+// else{
+//     System.out.println("odd");
+// }
+//     }
+// }
+//                           a=b,a>b,a<b check karna 
+// Scanner sc= new Scanner(System.in);
+// int a= sc.nextInt();
+// int b= sc.nextInt();
+// if( a==b){
+//     System.out.println("equal");
+// }
+// else{
+//     if(a>b){
+//     System.out.println("grater");
+// }
+
+// else{
+//     System.out.println("lesser");
+
+//                             switch  case statement use
 Scanner sc= new Scanner(System.in);
-int a= sc.nextInt();
-int b= sc.nextInt();
-int sum = a+b;
-System.out.println(sum );
+int button= sc.nextInt();
+switch(button){
+    case 1: System.out.println("monday");
+    break;
+    case 2: System.out.println("tuesday");
+    break;
+    case 3: System.out.println("wednesday");
+    break;
+    case 4: System.out.println("friday");
+    break;
+    default: System.out.println("kuch nahi ree");
+}
     }
 }
