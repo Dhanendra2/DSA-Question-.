@@ -64,18 +64,41 @@ public class Code{
 //     System.out.println("lesser");
 
 //                             switch  case statement use
-Scanner sc= new Scanner(System.in);
-int button= sc.nextInt();
-switch(button){
-    case 1: System.out.println("monday");
-    break;
-    case 2: System.out.println("tuesday");
-    break;
-    case 3: System.out.println("wednesday");
-    break;
-    case 4: System.out.println("friday");
-    break;
-    default: System.out.println("kuch nahi ree");
+// Scanner sc= new Scanner(System.in);
+// int button= sc.nextInt();
+// switch(button){
+//     case 1: System.out.println("monday");
+//     break;
+//     case 2: System.out.println("tuesday");
+//     break;
+//     case 3: System.out.println("wednesday");
+//     break;
+//     case 4: System.out.println("friday");
+//     break;
+//     default: System.out.println("kuch nahi ree");
+// }
+//                        
+//                          loop for loop
+// for(int counter=0; counter<5; counter= counter+1){
+//     System.out.println("counter");
+// }
+
+//                              while loop 
+//   Scanner sc= new Scanner(System.in);
+//  int age= sc.nextInt();
+// while(age<12){
+//     System.out.println("bachha");
+// }
+
+//                                    do while loop
+// int i=0;
+// do{
+//     System.out.println(i);
+//     i++;
+// }while(i<=20);
+//                               pattern
+for(int i=1; i<=4; i++){
+    System.out.println("*");
 }
     }
 }
