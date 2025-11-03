@@ -132,45 +132,45 @@ public class Code{
   
 
 //                                       butterfly pattern 
- int n = 4;
+//  int n = 4;
 
 
-       //upper part
-       for(int i=1; i<=n; i++) {
-           for(int j=1; j<=i; j++) {
-               System.out.print("*");
-           }
+//        //upper part
+//        for(int i=1; i<=n; i++) {
+//            for(int j=1; j<=i; j++) {
+//                System.out.print("*");
+//            }
 
 
-           int spaces = 2 * (n-i);
-           for(int j=1; j<=spaces; j++) {
-               System.out.print(" ");
-           }
+//            int spaces = 2 * (n-i);
+//            for(int j=1; j<=spaces; j++) {
+//                System.out.print(" ");
+//            }
 
 
-           for(int j=1; j<=i; j++) {
-               System.out.print("*");
-           }
-           System.out.println();
-       }
+//            for(int j=1; j<=i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
 
-for(int i=n; i>=1; i--) {
-           for(int j=1; j<=i; j++) {
-               System.out.print("*");
-           }
-
-
-           int spaces = 2 * (n-i);
-           for(int j=1; j<=spaces; j++) {
-               System.out.print(" ");
-           }
+// for(int i=n; i>=1; i--) {
+//            for(int j=1; j<=i; j++) {
+//                System.out.print("*");
+//            }
 
 
-           for(int j=1; j<=i; j++) {
-               System.out.print("*");
-           }
-           System.out.println();
-       }
+//            int spaces = 2 * (n-i);
+//            for(int j=1; j<=spaces; j++) {
+//                System.out.print(" ");
+//            }
+
+
+//            for(int j=1; j<=i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
 
 
     }
