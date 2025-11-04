@@ -1,7 +1,7 @@
 
-import java.util.*;
-public class Code{
-    public static void main(String[] args){
+// import java.util.*;
+// public class Code{
+//     public static void main(String[] args){
 //         // System.out.print("maa");
 //         // String name  = " mata ";
 //         // int  a = 34; 
@@ -171,7 +171,51 @@ public class Code{
 //            }
 //            System.out.println();
 //        }
+//                                          function 
+import java.util.*;
+public class Code{
+    // public static void printMyName(String name){
+    //     System.out.println(name);
+    //     return ;
+
+    // }
+
+    // public static void main(String[] args){
+    //     Scanner sc = new Scanner(System.in);
+    //     String name= sc.next(); 
+    //     printMyName(name);
+
+//                         print sum using function 
 
 
+// public static int CalculationSum(int a,int b){
+//     int sum = a+b;
+//     return sum;
+
+// }
+// public static void main(String[] args) {
+//     Scanner sc= new Scanner( System.in);
+//     int a =sc.nextInt();
+//     int b =sc.nextInt();
+//     int sum = CalculationSum(a,b);
+//     System.out.println(sum);
+// }
+//     }
+
+//                      factorial number
+ public static void printFactorial(int n){
+    int factorial=1;
+    for(int i=n; i>=1;i--){
+        factorial = factorial*i; 
     }
+    System.out.println(factorial);
+    return ;
+
+
+ } 
+public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in );
+    int n= sc.nextInt();
+    printFactorial(n);
+}
 }
