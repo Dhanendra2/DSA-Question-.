@@ -244,20 +244,41 @@ public class Code{
 
 
 //                          input and search the number 
-public static void main(String[] args) {
-  Scanner sc = new Scanner( System.in );
-  int size= sc.nextInt();
-  int number[]= new int[size];
+// public static void main(String[] args) {
+//   Scanner sc = new Scanner( System.in );
+//   int size= sc.nextInt();
+//   int number[]= new int[size];
 
-  for(int i=0; i<size; i++){
-    number[i]=sc.nextInt();
+//   for(int i=0; i<size; i++){
+//     number[i]=sc.nextInt();
+//   }
+//   int x= sc.nextInt();
+//   for(int i=0; i<number.length; i++){
+//      if(number[i]==x){
+//         System.out.println("found at index " + i);
+//      }
+//   }  
+
+//                          2D arrays
+public static void main(String[] args) {
+  Scanner sc= new Scanner(System.in);
+  int rows= sc.nextInt();
+  int cols = sc.nextInt();
+  int[][]numbers=new int[3][4];
+  for(int i=0; i<rows; i++){
+    for(int j=0; j<cols; j++){
+      numbers[i][j]=sc.nextInt();
+}
   }
-  int x= sc.nextInt();
-  for(int i=0; i<number.length; i++){
-     if(number[i]==x){
-        System.out.println("found at index " + i);
-     }
-  }  
+
+      for(int i=0; i<rows; i++){
+    for(int j=0; j<cols; j++){
+System.out.print(numbers[i][j]+ "");
+    }
+    System.out.println();
+  }
+ 
 }
 }
+
 
