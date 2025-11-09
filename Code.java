@@ -260,25 +260,81 @@ public class Code{
 //   }  
 
 //                          2D arrays
-public static void main(String[] args) {
-  Scanner sc= new Scanner(System.in);
-  int rows= sc.nextInt();
-  int cols = sc.nextInt();
-  int[][]numbers=new int[3][4];
-  for(int i=0; i<rows; i++){
-    for(int j=0; j<cols; j++){
-      numbers[i][j]=sc.nextInt();
-}
-  }
+// public static void main(String[] args) {
+//   Scanner sc= new Scanner(System.in);
+//   int rows= sc.nextInt();
+//   int cols = sc.nextInt();
+//   int[][]numbers=new int[3][4];
+//   for(int i=0; i<rows; i++){
+//     for(int j=0; j<cols; j++){
+//       numbers[i][j]=sc.nextInt();
+// }
+//   }
 
-      for(int i=0; i<rows; i++){
-    for(int j=0; j<cols; j++){
-System.out.print(numbers[i][j]+ "");
-    }
-    System.out.println();
-  }
+//       for(int i=0; i<rows; i++){
+//     for(int j=0; j<cols; j++){
+// System.out.print(numbers[i][j]+ "");
+//     }
+//     System.out.println();
+//   }
  
+// }
+
+// public static void main(String[] args) {
+//    Scanner sc= new Scanner(System.in);
+//    int rows= sc.nextInt();
+//    int cols = sc.nextInt();
+//    int[][]numbers=new int[3][4];
+//    for(int i=0; i<rows; i++){
+//      for(int j=0; j<cols; j++){
+//        numbers[i][j]=sc.nextInt();
+//  }
+//    }
+// int x= sc.nextInt();
+//    for(int i=0; i<rows; i++){
+//      for(int j=0; j<cols; j++){
+//       if(numbers[i][j]==x){
+//          System.out.println("found at index " + i + " " + j);
+      
+//       }
+//     }
+//  }
+// }
+
+//                                 String 
+
+// public static void main(String[] args) {
+  
+//   Scanner sc = new Scanner(System.in);
+//   String name = sc.next();
+//   System.out.println("your name is " + name.length() );
+// }
+// }
+  //                                string ke length find karna 
+//   public static void main(String[] args) {
+  
+//   Scanner sc = new Scanner(System.in);
+//   String name = sc.next();
+//   System.out.println("your name is " + name.length() );
+// }
+// }
+
+//                          compair function ka used karna      
+// public static void main(String[] args) {
+//  String name1 = "maaa";
+//  String name2= "maaa";
+//  if( name1.compareTo(name2)==0){
+//   System.out.println( " Steing is equal ");
+
+//  }
+//  else{
+//   System.out.println("String is not equal ");
+//  }
+// }
+//                              ek string ko index se print karna 
+public static void main(String[] args) {
+  String sentence= "maa bapu ka aashirwad ";
+  String name= sentence.substring(5);
+  System.out.println(name);
 }
 }
-
-
