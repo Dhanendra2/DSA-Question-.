@@ -172,8 +172,7 @@
 //            System.out.println();
 //        }
 //                                          function 
-import java.util.*;
-public class Code{
+ 
     // public static void printMyName(String name){
     //     System.out.println(name);
     //     return ;
@@ -332,9 +331,57 @@ public class Code{
 //  }
 // }
 //                              ek string ko index se print karna 
+// public static void main(String[] args) {
+//   String sentence= "maa bapu ka aashirwad ";
+//   String name= sentence.substring(5);
+//   System.out.println(name);
+// }
+
+//                            String builder ka used 
+// public static void main(String[] args) {
+//   StringBuilder sb=new StringBuilder("maa");
+//   System.out.println(sb);
+//   System.out.println(sb.charAt(0));
+//   sb.setCharAt(0,'p');
+//   System.out.println(sb);
+//   sb.insert(0,'s');
+//   System.out.println(sb);
+//   sb.delete(1,3);
+//   System.out.println(sb);
+// }
+//                                    string ko reverse karna
+// public static void main(String[] args) {
+//   StringBuilder  sb= new StringBuilder("hello");
+//   for(int i=0; i<sb.length()/2; i++){
+//     int front = i;
+//     int back= sb.length() -1-i;
+//     char frontChar=sb.charAt(front);
+//     char backChar=sb.charAt(back);
+//     sb.setCharAt(front,backChar);
+//     sb.setCharAt(back, frontChar);
+
+//   }
+//   System.out.println(sb);
+// }
+
+//                              bubble sort 
+
+
+import java.util.*;
+public class Code{
+
 public static void main(String[] args) {
-  String sentence= "maa bapu ka aashirwad ";
-  String name= sentence.substring(5);
-  System.out.println(name);
+  int arr[]= {2,5,6,1,8};
+  for(int i=0;i<arr.length-1; i++){
+    for(int j=0; j<arr.length-i-1; j++){
+      if(arr[j]>arr[j+1]){
+        int temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+
+      }
+    }
+  }
+ System.out.println(arr);
 }
-}
+} 
