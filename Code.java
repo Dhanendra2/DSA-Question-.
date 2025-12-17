@@ -367,31 +367,148 @@
 //                              bubble sort 
 
 
+// import java.util.*;
+// public class Code{
+
+// public static void  printArray(int arr[]) {
+  
+
+//        for(int i=0; i<arr.length; i++) {
+//            System.out.print(arr[i]+" ");
+//        }
+//        System.out.println();
+//    }
+// public static void main(String[] args) {
+  
+
+//   int arr[]= {2,5,6,1,8};
+//   for(int i=0;i<arr.length-1; i++){
+//     for(int j=0; j<arr.length-i-1; j++){
+//       if(arr[j]>arr[j+1]){
+//         int temp=arr[j];
+//         arr[j]=arr[j+1];
+//         arr[j+1]=temp;
+
+//       }
+//     }
+//   }
+//  printArray(arr);
+// }
+// } 
+
+
+//                         selectio sort
 import java.util.*;
-public class Code{
 
-public static void  printArray(int arr[]) {
-  
 
-       for(int i=0; i<arr.length; i++) {
-           System.out.print(arr[i]+" ");
-       }
-       System.out.println();
-   }
-public static void main(String[] args) {
-  
+class Sorting {
+//    public static void printArray(int arr[]) {
+//        for(int i=0; i<arr.length; i++) {
+//            System.out.print(arr[i]+" ");
+//        }
+//        System.out.println();
+//    }
 
-  int arr[]= {2,5,6,1,8};
-  for(int i=0;i<arr.length-1; i++){
-    for(int j=0; j<arr.length-i-1; j++){
-      if(arr[j]>arr[j+1]){
-        int temp=arr[j];
-        arr[j]=arr[j+1];
-        arr[j+1]=temp;
 
-      }
+//    public static void main(String args[]) {
+//        int arr[] = {7, 8, 1, 3, 2};
+
+
+//        //selection sort
+//        for(int i=0; i<arr.length-1; i++) {
+//            int smallest = i;
+//            for(int j=i+1; j<arr.length; j++) {
+//                if(arr[j] < arr[smallest]) {
+//                    smallest = j;
+//                }
+//            }
+//            //swap
+//            int temp = arr[smallest];
+//            arr[smallest] = arr[i];
+//            arr[i] = temp;
+//        }
+
+
+//        printArray(arr);
+//    }
+
+//                               Recursion 
+// public static void printNumb(int n) {
+//     if(n==6){
+//         return;
+//     }
+//     System.out.println(n);
+//     printNumb(n+1);
+
+
+    
+// }
+// public static void main(String[] args) {
+//     int n=1;
+// printNumb(n);
+
+//           print sum of first n natural number
+
+// public static void printSum(int i, int n, int sum){
+//     if(i == n){
+//         sum += i;
+//         System.out.println(sum);
+//         return;
+//     }
+//     sum += i;
+//     printSum(i+1, n, sum);
+// }
+// public static void main(String[] args) {
+//     printSum(1,5, 0);
+
+
+//                      factorial of a number n
+
+// Factorial(n);
+//     System.out.println(ans);public static int calaFactorial(int n){
+//     if(n==1 || n==0){
+//         return 1;
+//     }
+//     int fact_nm1 = calaFactorial(n-1);
+//     int fact_n = n*fact_nm1;
+//     return fact_n;
+// }
+// public static void main(String[] args) {
+//     int n=9;
+//     int ans = cala
+
+//                          Tower Of Hanoi 
+
+// public static void towerOfHanoi(int n, String src, String helper,String dest){
+//     if(n==1){
+//         System.out.println("transfer disk"+ n +"from"+ src+ "to"+dest);
+//         return;
+//     }
+//     towerOfHanoi(n-1,src, dest,helper);
+//     System.out.println("transfer disk"+ n +"from"+ src+ "to"+dest);
+//     towerOfHanoi(n-1,helper,src,dest);
+
+// }
+// public static void main(String[] args) {
+//     int n=3;
+//     towerOfHanoi(n,"S","H","D");
+// }
+
+//                 print reverse string 
+public static void printRev(String str,int idx){
+    if(idx==0){
+        System.out.println(str.charAt(idx));
+        return;
     }
-  }
- printArray(arr);
+    System.out.println(str.charAt(idx));
+    printRev(str , idx-1);
+
+
 }
-} 
+public static void main(String[] args) {
+    String str="abcd";
+    printRev(str,str.length()-1 );
+}
+}
+
+
